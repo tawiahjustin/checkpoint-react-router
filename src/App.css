@@ -1,38 +1,90 @@
-.App {
+.app__nav {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app__title {
+  background-color: rgb(90, 117, 201);
+  text-align: center;
+  color: white;
+  padding: 1rem;
+  margin-bottom: 2.5rem;
+}
+.app__search-input {
+  width: 30%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+.app__movie-container {
+  padding: 0 2rem;
+}
+.app__movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app__card {
+  background-color: rgb(204, 225, 225);
+  margin: 1rem;
+  width: 400px;
+  border-radius: 0.7rem;
+}
+.app__description {
+  margin: 0.5rem;
+  display: flex;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.posterURL {
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+.posterURL img {
+  width: 100%;
+}
+.frame {
+  border-top-right-radius: 0.7rem;
+  border-top-left-radius: 0.7rem;
+}
+.card {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.app__description-card {
+  background-color: rgb(204, 225, 225);
+  margin: 1rem;
+  width: 50%;
+  border-radius: 0.7rem;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.link {
+  text-decoration: none;
+  color: rgb(45, 33, 87);
+}
+.image-container {
+  width: 70px;
+  height: 70px;
+  margin-left: 50px;
+}
+.image-container img {
+  width: 100%;
+}
+/* mobile*/
+@media screen and (max-width: 800px) {
+  .app__movie-container {
+    padding: 0;
   }
-  to {
-    transform: rotate(360deg);
+
+  .app__description-card {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  body {
+    background: rgb(145, 172, 255);
   }
 }
